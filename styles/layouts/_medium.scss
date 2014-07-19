@@ -41,55 +41,40 @@
   .links {
     background: none;
 
-    .item {
+    .new-talent-awards, .the-future-of-sound, .sound-art {
       @include width(6);
       display: inline-block;
       background-size: cover;
       height: 250px;
       text-align: left;
       border-radius: 0;
+
+      a {
+        border: 0;
+        background: $purple;
+        display: inline;
+        padding: 0.5rem 2rem;
+      }
+
+      a:hover {
+        background: $purple;
+      }
     }
 
-    .item+.item {
+    .the-future-of-sound, .sound-art {
       margin-left: $gutter;
-    }
-
-    .item-link {
-      border: 0;
-      background: $purple;
-      display: inline;
-      padding: 0.5rem 2rem;
-    }
-
-    .item-link:hover {
-      background: $purple;
     }
 
     .new-talent-awards {
       background-image: url('/images/girl-lens-flare.jpg');
-      @extend .item;
-
-      a {
-        @extend .item-link;
-      }
     }
 
     .the-future-of-sound {
       background-image: url('/images/mixing-desk.jpg');
-      @extend .item;
-
-      a {
-        @extend .item-link;
-      }
     }
 
     .sound-art {
       background-image: url('/images/seagulls-pier.jpg');
-      @extend .item;
-
-      a {
-        @extend .item-link;
-      }
     }
   }
 }

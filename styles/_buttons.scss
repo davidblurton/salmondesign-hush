@@ -1,0 +1,21 @@
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: $purple;
+  color: $white;
+}
+
+.btn-secondary {
+  background-color: $yellow;
+  color: $purple;
+}
+
+.btn-outline {
+  border: 1px solid $white;
+  color: $white;
+}

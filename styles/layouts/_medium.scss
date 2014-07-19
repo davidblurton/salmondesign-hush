@@ -1,0 +1,5 @@
+@media screen and (min-width: 14 * $column-with-gutter) {
+  .container {
+    @include width(16);
+  }
+}

@@ -1,0 +1,34 @@
+.container {
+  @include width(4);
+}
+
+.pad {
+  padding: 2rem 0;
+}
+
+.logo {
+  @extend: .pad;
+}
+
+.headline {
+  @extend .pad;
+  @extend .container;
+
+  background: $yellow;
+}
+
+.intro {
+  @extend .pad;
+
+  text-align: center;
+
+  h2 {
+    font-weight: normal;
+  }
+}
+
+.links {
+  @extend .pad;
+
+  background-color: $purple;
+}

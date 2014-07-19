@@ -1,0 +1,41 @@
+html,
+body {
+  text-rendering: optimizeLegibility;
+  color: $text;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: bold;
+  margin-top: .2rem;
+  margin-bottom: .5rem;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+a {
+  color: $link;
+}
+
+blockquote .quote:before {
+  content: '\201C';
+}
+
+blockquote .quote:after {
+  content: '\201D';
+}

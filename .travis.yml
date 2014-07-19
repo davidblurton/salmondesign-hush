@@ -1,15 +1,17 @@
 language: node_js
 node_js:
 - '0.10'
-env: BROCCOLI_ENV=production
+env:
+  matrix:
+  - BROCCOLI_ENV=production
 install: npm install;
 script: broccoli build dist
 deploy:
   edge: true
   provider: s3
-  access_key_id: AKIAIIALQ2ZY23VOG3NA
+  access_key_id: AKIAJ5LWZ4CET7VNWJ5Q
   secret_access_key:
-    secure: Jy6r0ZnYZoDnBv21ZEdQG/vtcHJvyFbR9HBg8uRfa0xdrHdJZRcv01pE8kOO01MGXvqjm7EW6bXX4iQ3cQRy+mruJtMEswldxcDeob2W59vianhNliAk2OaNDjmpq+ixANNSwu3rUEwII8tbc9ia4PVGZDs9NVbCkbKLEMtNf9s=
+    secure: g3+S7wk5a+C7Fp6S9SQ3bumllsffUn/kTVpkxRkupHSDc6TYXqX9AzCZcu8nbgRJmJs//sPwNziYeq9F00B2dt32S/MBdPEj+FJ0KtkvV5tPt9P/GOkmQMMNXPtwCFnbV1WxSUHt/yVkYTaLAV2qWYsvXcveIoTguXF5mKy0yBI=
   bucket: hush.salmondesign.co
   skip_cleanup: true
   endpoint: hush.salmondesign.co.s3-website-eu-west-1.amazonaws.com

@@ -17,5 +17,6 @@ deploy:
   endpoint: hush.salmondesign.co.s3-website-eu-west-1.amazonaws.com
   region: eu-west-1
   local-dir: dist
+  cache_control: max-age=2592000
   on:
     branch: master

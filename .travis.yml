@@ -1,6 +1,7 @@
 language: node_js
 node_js:
 - '0.10'
+env: BROCCOLI_ENV=production
 install: npm install;
 script: broccoli build dist
 deploy:

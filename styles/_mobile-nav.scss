@@ -5,6 +5,7 @@ nav {
 nav.active {
   display: block;
   background-color: $yellow;
+  margin-top: 4rem;
 
   ul {
     @extend .container;

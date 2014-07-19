@@ -22,18 +22,13 @@
   background: $yellow;
 }
 
-.menu-icon-container {
-  @extend .container;
-  @extend .pad-small;
-
-  height: 24px;
-}
-
 .menu-icon {
   @extend .menu-icon;
 
+  opacity: 0.7;
   position: absolute;
-  right:0;
+  top: 16px;
+  right:16px;
 }
 
 .intro {

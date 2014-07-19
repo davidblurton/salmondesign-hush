@@ -19,5 +19,5 @@
     "broccoli-cli": "0.0.1",
     "broccoli-autoprefixer": "~0.2.0",
     "broccoli-ruby-sass": "~0.2.0"
-  },
+  }
 }

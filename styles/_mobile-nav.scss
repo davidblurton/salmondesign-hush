@@ -1,0 +1,30 @@
+nav {
+  display: none;
+}
+
+nav.active {
+  display: block;
+  background-color: $yellow;
+
+  ul {
+    @extend .container;
+    list-style: none;
+    padding: 1rem 0;
+
+    li {
+      padding: 0.5rem 0;
+      position: relative;
+
+      a {
+        color: $black;
+      }
+
+      a:after {
+        content: '';
+        @extend .nav-arrow;
+        position: absolute;
+        right:0;
+      }
+    }
+  }
+}

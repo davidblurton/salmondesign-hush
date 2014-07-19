@@ -1,6 +1,7 @@
 .container {
   margin: 0 auto;
   @include width(4);
+  position: relative;
 }
 
 .pad {
@@ -19,6 +20,20 @@
   @extend .pad;
 
   background: $yellow;
+}
+
+.menu-icon-container {
+  @extend .container;
+  @extend .pad-small;
+
+  height: 24px;
+}
+
+.menu-icon {
+  @extend .menu-icon;
+
+  position: absolute;
+  right:0;
 }
 
 .intro {
@@ -53,6 +68,7 @@
 
   > a {
     margin: 0.5rem;
+    display: inline-block;
   }
 }
 

@@ -1,18 +1,22 @@
 .container {
+  margin: 0 auto;
   @include width(4);
 }
 
 .pad {
-  padding: 2rem 0;
+  padding: 3rem 0;
+}
+
+.pad-small {
+  padding: 1rem 0;
 }
 
 .logo {
-  @extend: .pad;
+  @extend .pad;
 }
 
 .headline {
   @extend .pad;
-  @extend .container;
 
   background: $yellow;
 }
@@ -22,8 +26,16 @@
 
   text-align: center;
 
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
   h2 {
     font-weight: normal;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -31,4 +43,50 @@
   @extend .pad;
 
   background-color: $purple;
+}
+
+.social {
+  @extend .pad-small;
+
+  opacity: 0.7;
+  text-align: center;
+
+  > a {
+    margin: 0.5rem;
+  }
+}
+
+.sponsors {
+  @extend .pad-small;
+  @extend .container;
+
+  text-align: center;
+  opacity: 0.7;
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+.footer-links {
+  @extend .pad-small;
+  @extend .container;
+
+  opacity: 0.7;
+
+  a {
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+    color: $text;
+    text-decoration: none;
+  }
+}
+
+footer {
+  text-align: center;
+
+  p {
+    font-size: 0.8rem;
+    color: $purple;
+  }
 }

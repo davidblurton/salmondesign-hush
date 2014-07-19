@@ -1,18 +1,40 @@
 extend /layouts/layout
 block content
   .logo
-    .hush-logo
+    .container
+      .hush-logo
 
   section.headline
-    .sound-art-festival
+    .container
+      img(src="/images/text-lock-up.png")
 
   section.intro
-    h1 You are invited to the world's most sensory event.
-    h2 Hush celebrates the diverse methods of sound art and sound theory, drawing together current and future leaders of the industry.
-    a.btn.btn-primary Get tickets
-    a.btn.btn-secondary Schedule
+    .container
+      h1 You are invited to the world's most sensory event.
+      h2 Hush celebrates the diverse methods of sound art and sound theory, drawing together current and future leaders of the industry.
+      a(href="#").btn.btn-primary Get tickets
+      a(href="#").btn.btn-secondary Schedule
 
   section.links
-    a.btn.btn-outline The Future of Sound
-    a.btn.btn-outline New Talent Awards
-    a.btn.btn-outline News
+    .container
+      a(href="#").btn.btn-outline The Future of Sound
+      a(href="#").btn.btn-outline New Talent Awards
+      a(href="#").btn.btn-outline News
+
+  section.social
+    a.twitter(href="#")
+    a.facebook(href="#")
+
+  section.sponsors
+    p Festival Sponsors
+    img(src="/images/hush-sponsors.png")
+
+  section.footer-links
+    a(href="#") Contact
+    | |
+    a(href="#") Sitemap
+    | |
+    a(href="#") Terms &amp; Privacy
+
+  footer
+    p Copyright Hush 2014

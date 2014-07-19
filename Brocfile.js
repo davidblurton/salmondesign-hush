@@ -20,7 +20,7 @@ var assets = 'public';
 var tree = mergeTrees([html, css, assets]);
 
 if (env === 'production') {
-  tree = assetRev(merged, {
+  tree = assetRev(tree, {
     extensions: ['js', 'css', 'png', 'jpg', 'gif'],
     replaceExtensions: ['html', 'js', 'css'],
   });

@@ -1,5 +1,95 @@
-@media screen and (min-width: 14 * $column-with-gutter) {
+@media screen and (min-width: 18 * $column-with-gutter) {
   .container {
-    @include width(16);
+    @include width(18);
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  section.intro {
+    @include width(6);
+
+    .scheudule {
+      display: none;
+    }
+  }
+
+  nav {
+    @include width(18);
+    display: block;
+
+    ul {
+      @include width(6);
+      list-style: none;
+      position: absolute;
+      top: 3rem;
+      right: 0;
+
+      li {
+        display: inline-block;
+      }
+
+      li+li:before
+      {
+        content: '/';
+        padding: 0 5px;
+      }
+    }
+  }
+
+  .links {
+    background: none;
+
+    .item {
+      @include width(6);
+      display: inline-block;
+      background-size: cover;
+      height: 250px;
+      text-align: left;
+      border-radius: 0;
+    }
+
+    .item+.item {
+      margin-left: $gutter;
+    }
+
+    .item-link {
+      border: 0;
+      background: $purple;
+      display: inline;
+      padding: 0.5rem 2rem;
+    }
+
+    .item-link:hover {
+      background: $purple;
+    }
+
+    .new-talent-awards {
+      background-image: url('/images/girl-lens-flare.jpg');
+      @extend .item;
+
+      a {
+        @extend .item-link;
+      }
+    }
+
+    .the-future-of-sound {
+      background-image: url('/images/mixing-desk.jpg');
+      @extend .item;
+
+      a {
+        @extend .item-link;
+      }
+    }
+
+    .sound-art {
+      background-image: url('/images/seagulls-pier.jpg');
+      @extend .item;
+
+      a {
+        @extend .item-link;
+      }
+    }
   }
 }

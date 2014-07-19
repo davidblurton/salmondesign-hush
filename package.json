@@ -15,9 +15,9 @@
     "broccoli": "~0.12.3",
     "broccoli-merge-trees": "~0.1.4",
     "broccoli-jade": "~0.2.0",
-    "broccoli-sass": "~0.2.1",
     "broccoli-csso": "~0.2.0",
     "broccoli-cli": "0.0.1",
-    "broccoli-autoprefixer": "~0.2.0"
-  }
+    "broccoli-autoprefixer": "~0.2.0",
+    "broccoli-ruby-sass": "~0.2.0"
+  },
 }

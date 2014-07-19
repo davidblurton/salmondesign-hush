@@ -14,12 +14,18 @@
 
 .logo {
   @extend .pad;
+
+  .hush-logo {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .headline {
   @extend .pad;
 
   background: $yellow;
+  text-align: center;
 }
 
 .menu-icon {
@@ -29,10 +35,13 @@
   position: absolute;
   top: 16px;
   right:16px;
+
+  cursor: pointer;
 }
 
 .intro {
   @extend .pad;
+  @extend .container;
 
   text-align: center;
 
@@ -53,6 +62,27 @@
   @extend .pad;
 
   background-color: $purple;
+
+  .new-talent-awards {
+    a {
+      @extend .btn;
+      @extend .btn-outline;
+    }
+  }
+
+  .the-future-of-sound {
+    a {
+      @extend .btn;
+      @extend .btn-outline;
+    }
+  }
+
+  .sound-art {
+    a {
+      @extend .btn;
+      @extend .btn-outline;
+    }
+  }
 }
 
 .social {
@@ -84,6 +114,7 @@
   @extend .container;
 
   opacity: 0.7;
+  text-align: center;
 
   a {
     font-size: 0.8rem;

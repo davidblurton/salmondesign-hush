@@ -12,12 +12,25 @@
   color: $white;
 }
 
+.btn-primary:hover {
+  background-color: darken($purple, 10%);
+}
+
 .btn-secondary {
   background-color: $yellow;
   color: $purple;
 }
 
+.btn-secondary:hover {
+  background-color: darken($yellow, 10%);
+}
+
 .btn-outline {
   border: 1px solid $white;
+  color: $white;
+}
+
+.btn-outline:hover {
+  background-color: rgba($white, 0.1);
   color: $white;
 }
